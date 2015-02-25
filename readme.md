@@ -22,14 +22,14 @@ trim.right(',foo,bar,', ','); // ,foo,bar
 #### String
 
 Type: `String`  
-Default: ''
+Default: undefined
 
 String to be trimmed.
 
 #### Characters
 
 Type: `String`  
-Default: ''
+Default: undefined
 
 Characters to trim.
 
