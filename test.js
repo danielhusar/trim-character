@@ -15,6 +15,11 @@ it('Trim should work with special characters', function () {
 	assert.equal(trim('|foo bar|', '|'), 'foo bar');
 });
 
+it('Trim should work with mutiple characters', function () {
+	assert.equal(trim('foo bar foo', 'foo'), ' bar ');
+	assert.equal(trim('$$$foo bar$$$', '$$$'), 'foo bar');
+});
+
 it('Trim with custom flags should work', function () {
 	assert.equal(trim('FooBaF', 'f'), 'FooBaF');
 	assert.equal(trim('FooBaF', 'f', 'i'), 'ooBa');
@@ -32,6 +37,11 @@ it('Left trim should work with special characters', function () {
 	assert.equal(trim.left('^foo bar^', '^'), 'foo bar^');
 });
 
+it('Left trim should work with mutiple characters', function () {
+	assert.equal(trim.left('foo bar foo', 'foo'), ' bar foo');
+	assert.equal(trim.left('$$$foo bar$$$', '$$$'), 'foo bar$$$');
+});
+
 it('Left trim with custom flags should work', function () {
 	assert.equal(trim.left('FooBaF', 'f'), 'FooBaF');
 	assert.equal(trim.left('FooBaF', 'f', 'i'), 'ooBaF');
@@ -47,6 +57,11 @@ it('Right trim should work', function () {
 
 it('Right trim should work with special characters', function () {
 	assert.equal(trim.right('^foo bar^', '^'), '^foo bar');
+});
+
+it('Right trim should work with mutiple characters', function () {
+	assert.equal(trim.right('foo bar foo', 'foo'), 'foo bar ');
+	assert.equal(trim.right('$$$foo bar$$$', '$$$'), '$$$foo bar');
 });
 
 it('Right trim with custom flags should work', function () {
