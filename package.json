@@ -22,7 +22,6 @@
     "trim",
     "character",
     "regexp",
-    "remove",
     "remove"
   ],
   "devDependencies": {
