@@ -1,0 +1,34 @@
+{
+  "name": "trim-character",
+  "version": "1.0.0",
+  "description": "Trim characters from string",
+  "license": "MIT",
+  "repository": "danielhusar/trim-character",
+  "author": {
+    "name": "Daniel Husar",
+    "email": "dano.husar@gmail.com",
+    "url": "https://github.com/danielhusar"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "trim",
+    "character",
+    "regexp",
+    "remove",
+    "remove"
+  ],
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "dependencies": {
+    "escape-string-regexp": "^1.0.3"
+  }
+}
