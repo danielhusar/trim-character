@@ -38,7 +38,7 @@ Characters to trim.
 Type: `String`  
 Default: 'g'
 
-Regexp flags, `g` is always appended even if you dont specify it you parameter.
+Regexp flags, `g` is always appended even if you dont specify it in your parameter.
 
 ## License
 
