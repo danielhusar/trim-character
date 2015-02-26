@@ -13,6 +13,8 @@ npm install --save trim-character
 ```javascript
 var trim = require('trim-character');
 trim(',foo,bar,', ','); // foo,bar
+trim(',,,,,foo,bar,,,,,', ','); // foo,bar
+trim('foofoobarfoofoo', 'foo'); // bar
 trim.left(',foo,bar,', ','); // foo,bar,
 trim.right(',foo,bar,', ','); // ,foo,bar
 ```

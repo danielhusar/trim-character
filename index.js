@@ -29,18 +29,18 @@ function defaults (str, repl, flags) {
 
 module.exports = function (str, repl, flags) {
 	var params = defaults(str, repl, flags);
-	var regexp = new RegExp('(^' +  params.repl + ')|(' +  params.repl + '$)', params.flag);
+	var regexp = new RegExp('^(' +  params.repl + ')+|(' +  params.repl + ')+$', params.flag);
 	return str.replace(regexp, '');
 };
 
 module.exports.left = function (str, repl, flags) {
 	var params = defaults(str, repl, flags);
-	var regexp = new RegExp('(^' +  params.repl + ')', params.flag);
+	var regexp = new RegExp('^(' +  params.repl + ')+', params.flag);
 	return str.replace(regexp, '');
 };
 
 module.exports.right = function (str, repl, flags) {
 	var params = defaults(str, repl, flags);
-	var regexp = new RegExp('(' +  params.repl + '$)', params.flag);
+	var regexp = new RegExp('(' +  params.repl + ')+$', params.flag);
 	return str.replace(regexp, '');
 };
