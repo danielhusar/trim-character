@@ -1,6 +1,6 @@
 {
   "name": "trim-character",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Trim characters from string",
   "license": "MIT",
   "repository": "danielhusar/trim-character",
