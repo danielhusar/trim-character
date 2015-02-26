@@ -10,11 +10,21 @@ npm install --save trim-character
 
 ## Example
 
+#### Simple example
 ```javascript
 var trim = require('trim-character');
 trim(',foo,bar,', ','); // foo,bar
 trim(',,,,,foo,bar,,,,,', ','); // foo,bar
 trim('foofoobarfoofoo', 'foo'); // bar
+```
+
+#### Case insensitive replace
+```javascript
+trim('fooFOObarFOOfoo', 'foo', 'i'); // bar
+```
+
+#### Trim just from left or right
+```javascript
 trim.left(',foo,bar,', ','); // foo,bar,
 trim.right(',foo,bar,', ','); // ,foo,bar
 ```
